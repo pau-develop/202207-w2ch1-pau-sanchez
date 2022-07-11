@@ -11,19 +11,43 @@
   width: 50vw;
   height: 50vh;
   display: flex;
-  .box-left {
+  &__box-left {
     flex: 1;
     background-color: hsl(31, 77%, 52%);
     border-radius: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    &__image {
+    }
+    &__title {
+      font-family: Arial;
+      color: white;
+    }
   }
-  .box-mid {
+  &__box-mid {
     flex: 1;
     background-color: hsl(184, 100%, 22%);
+    display: flex;
+    flex-direction: column;
+    &__image {
+    }
+    &__title {
+      font-family: Arial;
+      color: white;
+    }
   }
-  .box-right {
+  &__box-right {
     flex: 1;
     background-color: hsl(179, 100%, 13%);
     border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    &__image {
+    }
+    &__title {
+      font-family: Arial;
+      color: white;
+    }
   }
 }
 // ## Colors
