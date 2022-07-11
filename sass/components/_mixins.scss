@@ -1,0 +1,7 @@
+@mixin normal-button($text-color) {
+  background-color: white;
+  border-radius: 25px;
+  border: none;
+  color: $text-color;
+  width: 40%;
+}

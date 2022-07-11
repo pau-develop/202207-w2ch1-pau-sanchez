@@ -1,3 +1,5 @@
+@import "./_mixins.scss";
+
 .page-wrap {
   width: 100vw;
   height: 100vh;
@@ -12,41 +14,21 @@
   height: 50vh;
   display: flex;
   &__box-left {
-    flex: 1;
     background-color: hsl(31, 77%, 52%);
-    border-radius: 20px 0 0 20px;
-    display: flex;
-    flex-direction: column;
-    &__image {
-    }
-    &__title {
-      font-family: Arial;
-      color: white;
+    button {
+      @include normal-button(hsl(31, 77%, 52%));
     }
   }
   &__box-mid {
-    flex: 1;
     background-color: hsl(184, 100%, 22%);
-    display: flex;
-    flex-direction: column;
-    &__image {
-    }
-    &__title {
-      font-family: Arial;
-      color: white;
+    button {
+      @include normal-button(hsl(184, 100%, 22%));
     }
   }
   &__box-right {
-    flex: 1;
     background-color: hsl(179, 100%, 13%);
-    border-radius: 0 20px 20px 0;
-    display: flex;
-    flex-direction: column;
-    &__image {
-    }
-    &__title {
-      font-family: Arial;
-      color: white;
+    button {
+      @include normal-button(hsl(184, 100%, 22%));
     }
   }
 }
