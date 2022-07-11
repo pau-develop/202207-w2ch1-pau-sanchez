@@ -1,4 +1,5 @@
-@import "./_mixins.scss";
+@import "./_ex1_mixins.scss";
+
 .page-wrap {
   width: 100vw;
   height: 100vh;
@@ -13,26 +14,26 @@
   height: 50vh;
   display: flex;
   &__box-left {
-    background-color: hsl(31, 77%, 52%);
+    @include box(hsl(31, 77%, 52%), 20px 0 0 20px);
     button {
       @include normal-button(hsl(31, 77%, 52%));
     }
   }
   &__box-mid {
-    background-color: hsl(184, 100%, 22%);
+    @include box(hsl(184, 100%, 22%), 0 0 0 0);
     button {
       @include normal-button(hsl(184, 100%, 22%));
     }
   }
   &__box-right {
-    background-color: hsl(179, 100%, 13%);
+    @include box(hsl(179, 100%, 13%), 0 20px 20px 0);
     button {
       @include normal-button(hsl(184, 100%, 22%));
     }
   }
   img {
-    width: 20%;
-    height: 20%;
+    width: 40%;
+    height: 30%;
   }
   h2 {
     font-family: "Lexend Deca", sans-serif;
@@ -43,7 +44,7 @@
   p {
     font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 18px;
     color: white;
   }
 }

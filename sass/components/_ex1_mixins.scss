@@ -9,3 +9,8 @@
   font-weight: 400;
   font-size: 20px;
 }
+@mixin box($background-color, $border-radius) {
+  padding-left: 5%;
+  background-color: $background-color;
+  border-radius: $border-radius;
+}
