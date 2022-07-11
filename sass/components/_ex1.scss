@@ -1,10 +1,9 @@
 @import "./_ex1_mixins.scss";
 
 .page-wrap {
-  width: 100vw;
-  height: 100vh;
   background-color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -13,13 +12,9 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  @media (min-width: 1000px) {
-    width: 50vw;
-    height: 50vh;
-    display: flex;
-  }
+  padding: 10%;
   &__box-left {
-    @include box(hsl(31, 77%, 52%), 20px 0 0 20px);
+    @include box(hsl(31, 77%, 52%), 20px 20px 0 0);
     button {
       @include normal-button(hsl(31, 77%, 52%));
     }
@@ -31,26 +26,88 @@
     }
   }
   &__box-right {
-    @include box(hsl(179, 100%, 13%), 0 20px 20px 0);
+    @include box(hsl(179, 100%, 13%), 0 0 20px 20px);
     button {
       @include normal-button(hsl(184, 100%, 22%));
     }
   }
   img {
-    width: 40%;
+    width: 20%;
     height: 30%;
   }
   h2 {
+    margin-top: 10%;
     font-family: "Lexend Deca", sans-serif;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
   }
   p {
+    margin-top: 10%;
     font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
+  }
+}
+
+@media (min-width: 1000px) {
+  .page-wrap {
+    width: 100vw;
+    height: 100vh;
+  }
+  .main {
+    flex-direction: row;
+    padding: 0;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    &__box-left {
+      @include box(hsl(31, 77%, 52%), 20px 0 0 20px);
+      flex: 1;
+      height: 100%;
+      padding: 5%;
+      display: flex;
+      flex-direction: column;
+      button {
+        @include normal-button(hsl(31, 77%, 52%));
+      }
+    }
+    &__box-mid {
+      @include box(hsl(184, 100%, 22%), 0 0 0 0);
+      flex: 1;
+      height: 100%;
+      padding: 5%;
+      display: flex;
+      flex-direction: column;
+      button {
+        @include normal-button(hsl(184, 100%, 22%));
+      }
+    }
+    &__box-right {
+      @include box(hsl(179, 100%, 13%), 0 20px 20px 0);
+      flex: 1;
+      height: 100%;
+      padding: 5%;
+      display: flex;
+      flex-direction: column;
+      button {
+        @include normal-button(hsl(184, 100%, 22%));
+      }
+    }
+    img {
+      width: 30%;
+      height: 100%;
+    }
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 12px;
+    }
+    button {
+      font-size: 12px;
+    }
   }
 }
 // ## Colors
