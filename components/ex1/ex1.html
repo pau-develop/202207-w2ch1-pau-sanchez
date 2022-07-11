@@ -5,15 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/components/ex1/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <title>Order summary component</title>
   </head>
   <body>
     <div class="page-wrap-ex1">
-      <main class="main-ex1">
-        <header>
-          <img src="" />
+      <card class="content-wrap-ex1">
+        <header class="content-wrap-ex1__header">
+          <img src="/components/ex1/illustration-hero.svg" />
         </header>
-      </main>
+        <main class="content-wrap-ex1__main">
+          <h3>Order Summary</h3>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div class="content-wrap-ex1__payment">
+            <img src="/components/ex1/icon-music.svg" />
+            <div class="content-wrap-ex1__annual">
+              <span>Annual Plan</span><span>$59.99/year</span>
+            </div>
+            <a href="#"><span>Change</span></a>
+          </div>
+          <button class="content-wrap-ex1__pay-button">
+            Proceed to Payment
+          </button>
+          <button class="content-wrap-ex1__cancel-button">Cancel Order</button>
+        </main>
+      </card>
     </div>
   </body>
 </html>
