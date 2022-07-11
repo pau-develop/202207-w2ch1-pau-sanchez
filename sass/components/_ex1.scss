@@ -1,3 +1,5 @@
+@import "./_ex1_mixins.scss";
+
 .page-wrap {
   width: 100vw;
   height: 100vh;
@@ -11,19 +13,39 @@
   width: 50vw;
   height: 50vh;
   display: flex;
-  .box-left {
-    flex: 1;
-    background-color: hsl(31, 77%, 52%);
-    border-radius: 20px 0 0 20px;
+  &__box-left {
+    @include box(hsl(31, 77%, 52%), 20px 0 0 20px);
+    button {
+      @include normal-button(hsl(31, 77%, 52%));
+    }
   }
-  .box-mid {
-    flex: 1;
-    background-color: hsl(184, 100%, 22%);
+  &__box-mid {
+    @include box(hsl(184, 100%, 22%), 0 0 0 0);
+    button {
+      @include normal-button(hsl(184, 100%, 22%));
+    }
   }
-  .box-right {
-    flex: 1;
-    background-color: hsl(179, 100%, 13%);
-    border-radius: 0 20px 20px 0;
+  &__box-right {
+    @include box(hsl(179, 100%, 13%), 0 20px 20px 0);
+    button {
+      @include normal-button(hsl(184, 100%, 22%));
+    }
+  }
+  img {
+    width: 40%;
+    height: 30%;
+  }
+  h2 {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+  }
+  p {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
   }
 }
 // ## Colors

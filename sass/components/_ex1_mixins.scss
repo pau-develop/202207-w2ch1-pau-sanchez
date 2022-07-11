@@ -1,0 +1,16 @@
+@mixin normal-button($text-color) {
+  background-color: white;
+  border-radius: 40px;
+  border: none;
+  color: $text-color;
+  width: 80%;
+  height: 40%;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+@mixin box($background-color, $border-radius) {
+  padding-left: 5%;
+  background-color: $background-color;
+  border-radius: $border-radius;
+}
