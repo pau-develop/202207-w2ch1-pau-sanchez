@@ -1,0 +1,54 @@
+.page-wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  .box-left {
+    flex: 1;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 20px 0 0 20px;
+  }
+  .box-mid {
+    flex: 1;
+    background-color: hsl(184, 100%, 22%);
+  }
+  .box-right {
+    flex: 1;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 20px 20px 0;
+  }
+}
+// ## Colors
+
+// ### Primary
+
+// Bright orange: hsl(31, 77%, 52%)
+// Dark cyan: hsl(184, 100%, 22%)
+// Very dark cyan: hsl(179, 100%, 13%)
+
+// ### Neutral
+
+// Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+// Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+// ## Typography
+
+// ### Body Copy
+
+// - Font size: 15px
+
+// ### Font
+
+// - Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+// - Weights: 400
+
+// - Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+// - Weights: 700
