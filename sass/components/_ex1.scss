@@ -1,5 +1,4 @@
 @import "./_mixins.scss";
-
 .page-wrap {
   width: 100vw;
   height: 100vh;
@@ -30,6 +29,22 @@
     button {
       @include normal-button(hsl(184, 100%, 22%));
     }
+  }
+  img {
+    width: 20%;
+    height: 20%;
+  }
+  h2 {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+  }
+  p {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
   }
 }
 // ## Colors
