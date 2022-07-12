@@ -6,7 +6,14 @@ body {
 .page-wrap-ex1 {
   height: 100vh;
   width: 100vw;
-  background-color: hsl(225, 100%, 94%);
+  background-image: url("/components/ex1/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 98%);
+  @media (min-width: 1000) {
+    background-image: url("/components/ex1/pattern-backgroud-desktop");
+  }
+
   display: flex;
   justify-content: center;
   align-items: center;
